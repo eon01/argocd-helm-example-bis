@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: eon01/stateless-flask
+  tag: latest
+
+service:
+  type: NodePort
+  port: 5000
+  nodePort: 30036
+  targetPort: 5000
